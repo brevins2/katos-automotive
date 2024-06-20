@@ -1,0 +1,278 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* account stylings */
+.account-body {
+    background-image: url('./images/bg_login.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0px;
+}
+
+.overlay {
+    background-color: rgba(41, 39, 39, 0.616);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.login-form {
+    background-color: white;
+    height: 80%;
+    width: 30%;            
+
+}
+
+.googlBtn {
+    padding: 10px;
+    width: 70%;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    border: 2px solid blue;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* margin: 0 auto; */
+}
+
+#signInbtn {
+    background-color: green;
+    border-color: green;
+}
+
+.input-tags {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 70%;
+}
+
+.form-input {
+    border: 2px solid gray;
+    border-radius: 50px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.color-red {
+    color: red;
+}
+
+
+/* Index page stylings */
+.top-header,
+header {
+    background-color: #FD0205;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone-div,
+.social-div {
+    display: flex;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.phon-text {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+.social-div {
+    gap: 10px;
+}
+
+.social-icon {
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: white;
+    height: auto;
+    padding: 0px 100px;
+    align-items: center;
+    box-shadow: 0px 0px 8px #6b6b6bbc;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.menu li a {
+    color: rgb(14, 38, 50);
+}
+
+.menu li a:hover {
+    color: #FD0205;
+}
+
+.menu li a:active {
+    color: #FD0205;
+}
+
+.menu li a:hover {
+    color: #FD0205;
+}
+
+.free-consultation {
+    background-color: #FD0205;
+    border: 2px solid #FD0205;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.banner {
+    background-image: url('./images/banner.jpg');
+    background-size: cover;
+    height: 440px;
+    padding: 0px;
+}
+
+.banner_overlay {
+    background-color: rgb(47, 53, 73, .75);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title,
+.subtitle {
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+}
+
+.subtitle{
+    font-size: 1.5em;
+    margin-top: -80px;
+}
+
+.text-red {
+    color: #FD0205;
+}
+
+.branches {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+}
+
+.branch {
+    background-color: rgb(23, 29, 51, .91);
+    padding: 10px 20px;
+    border-radius: 15px 15px 0px 0px;
+    color: white;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.branch h3 {
+    font-size: 32px;
+    width: 100%;
+}
+
+.branch_address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+}
+
+.branch_address p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    .top-header {
+        display: flex;
+        gap: 10px;
+        width: auto;
+        padding: 0px 10px;
+    }
+    .social-div,
+    .phone-div {
+        width: 48%;
+        padding: 10px;
+    }
+    header {
+        height: auto;
+        display: block;
+        padding: 8px 0px;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .free-consultation {
+        margin-left: 30px;
+        width: 50%;
+    }
+    .title {
+        font-size: 30px;
+        line-height: auto;
+    }
+    .subtitle {
+        font-size: 17px;
+        margin-top: 0px;
+    }
+    .banner {
+        height: auto;
+    }
+    .branches {
+        display: block;
+    }
+    .branch {
+        width: 90%;
+        margin-top: 8px;
+    }
+}
